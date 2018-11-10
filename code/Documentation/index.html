@@ -1,0 +1,294 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+<title>Hostrocket: Space - Documentation</title>
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/prettify.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+<div id="header" class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="doc-title"><div class="glyph-icon flaticon-document-1"></div>Hostrocket: Space - Documentation</div>
+        </div>
+    </div>
+</div>
+<div id="content" class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-md-3" style="padding:0;">
+            <div class="menu-holder">
+                <ul class="main-menu">
+                    <li><a href="#html" class="active"><i class="fa fa-angle-right" aria-hidden="true"></i>HTML Structure</a></li>
+                    <li><a href="#css"><i class="fa fa-angle-right" aria-hidden="true"></i>CSS & JavaScript</a></li>
+                    <li><a href="#logo"><i class="fa fa-angle-right" aria-hidden="true"></i>Logo & Menu</a></li>
+                    <li><a href="#top-content"><i class="fa fa-angle-right" aria-hidden="true"></i>Top Content</a></li>
+                    <li><a href="#rocket"><i class="fa fa-angle-right" aria-hidden="true"></i>Rocket Animation</a></li>
+                    <li><a href="#info"><i class="fa fa-angle-right" aria-hidden="true"></i>Info icons & text</a></li>
+                    <li><a href="#features"><i class="fa fa-angle-right" aria-hidden="true"></i>Features text & images</a></li>
+                    <li><a href="#pricing"><i class="fa fa-angle-right" aria-hidden="true"></i>Pricing tables</a></li>
+                    <li><a href="#reasons"><i class="fa fa-angle-right" aria-hidden="true"></i>Video section</a></li>
+                    <li><a href="#testimonials"><i class="fa fa-angle-right" aria-hidden="true"></i>Testimonials</a></li>
+                    <li><a href="#footer"><i class="fa fa-angle-right" aria-hidden="true"></i>Footer</a></li>
+                    <li><a href="#whmcs"><i class="fa fa-angle-right" aria-hidden="true"></i>WHMCS Theme Installation</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-9 content">
+            <h3 id="html">HTML Structure</h3>
+            <p>The template is based on bootstrap library, if you don’t know about bootstrap please take a look at their website http://getbootstrap.com/getting-started/. Actually in this template you will not have to know a lot in bootstrap, just the basic things.</p>
+            
+            <p>You can edit the Html file in any text editor, but we prefer to use an html editor like Adobe Dreamweaver.</p>
+            
+            <p>Our template built on bootstrap layout way, the whole page separated in rows, and every row created like this figure:</p>
+            
+            <img src="assets/images/doc.jpg">
+            <br>
+            <p>We arranged the template in sections, each section(div) has id, for example "header", "top-content", "pricing", ...etc</p>
+            <pre class="prettyprint">
+&lt;div id="top-content" class="container-fluid"&gt;
+...
+&lt;div id="info" class="container-fluid"&gt;
+...
+&lt;div id="features" class="container-fluid"&gt;
+...
+&lt;div id="pricing" class="container-fluid"&gt;
+...
+&lt;div id="testimonials" class="container-fluid"&gt;
+...
+&lt;div id="footer" class="container-fluid"&gt;
+...</pre>
+            <h3 id="css">CSS</h3>
+            <p>We used four CSS files in this template. Two files are from bootstrap "bootstrap.min.css" use it for the layout, one for icons "font-awesome.min.css",two for slider "slick.css". And "style.css" is our custom styles. we arrange the styles according to the order of the tags in the html code.</p>
+            
+            <p>
+                However, you can change all the styles (text color, background color,font size,...) by editing style.css file.
+            </p>
+            <pre class="prettyprint">/*------------------------------------------------------------------
+[Table of contents]
+
+1. General Styles.
+2. Header Styles.
+3. Top Content Styles.
+4. Info Styles.
+5. Features Styles.
+6. Starting Styles.
+7. Pricing Styles.
+8. Reasons Styles.
+9. Testimonials Styles.
+10. Footer Styles.
+11. Responsive Styles.
+-------------------------------------------------------------------*/</pre>
+           
+            <h3 id="javascript">JavaScript</h3>
+            <p>This template imports five Javascript files.</p>
+
+            <ul>
+                <li>"jquery.min.js": jQuery is a Javascript library that greatly reduces the amount of code that you must write.</li>
+                <li>"bootstrap.min.js": Bootstrap is the most popular Javascript framework for developing responsive, mobile first projects on the web.</li>
+                <li>"createjs.min.js": A simple but powerful JavaScript library for tweening and animating HTML5 and JavaScript properties.</li>
+                <li>"slick.min.js": Slick is a responsive carousel jQuery plugin.</li>
+                <li>"main.js": Our custom javascript code.</li>
+            </ul>
+            
+            <h3 id="logo">Logo</h3>
+            <p>To change the logo, replace the img src="" with your logo url.</p>
+            <pre class="prettyprint">&lt;img class="logo" src="images/logo.png" width="143" height="18"&gt;</pre>
+            
+            <h3 id="menu">Menu</h3>
+            <p>To change the menu links, simply edit this code. For example, the contact link is linked to the footer section.</p>
+            <pre class="prettyprint">
+&lt;ul class="nav navbar-nav navbar-right"&gt;
+    &lt;li&gt;&lt;a href="#info"&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#features"&gt;info&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#pricing"&gt;Pricing&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#footer"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class="chat-button" href="#"&gt;Live Chat&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+            <br>
+            <p>And for the Live Chat button, you can add the link for the Live Chat service in href="#" instead of #.</p>
+            <pre class="prettyprint">&lt;li&gt;&lt;a class="chat-button" href="#"&gt;Live Chat&lt;/a&gt;&lt;/li&gt;</pre>
+            <h3 id="top-content">Top Content</h3>
+            <p>To change the big text in the top area of the page, go to the #top-content div, you will see the text there.</p>
+            <pre class="prettyprint">
+&lt;div id="top-content" class="container-fluid"&gt;
+...
+&lt;h1&gt;Fast. yet affordable&lt;br&gt;
+Webhosting Services.&lt;/h1&gt;
+&lt;h4&gt;Search and Register your Domain name today&lt;/h4&gt;</pre>
+            <br>
+            <p>
+            For the domain search, we added function to search in Name.com, hope in future we do somthing better. Anyway you can link it to any other service you want.
+            </p>
+            <h3 id="rocket">Rocket Animation</h3>
+            <p>To replace the rocket animation with the instapage version animation, simply replace the following code:</p>
+            <pre class="prettyprint">
+&lt;div class=&quot;rocket-animation&quot;&gt;
+    &lt;div class=&quot;rocket&quot;&gt;
+        &lt;img src=&quot;images/rocket.png&quot; width=&quot;136&quot; height=&quot;190&quot;&gt;
+        &lt;span class=&quot;rocket-line rline1&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;rocket-line rline2&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;rocket-line rline3&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;cloud cloud1&quot;&gt;&lt;img src=&quot;images/cloud.png&quot; width=&quot;60&quot; height=&quot;35&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;cloud cloud2&quot;&gt;&lt;img src=&quot;images/cloud.png&quot; width=&quot;60&quot; height=&quot;35&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;cloud cloud3&quot;&gt;&lt;img src=&quot;images/cloud.png&quot; width=&quot;60&quot; height=&quot;35&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+            <p>With this code:</p>
+            <pre class="prettyprint">
+&lt;div class=&quot;rocket-animation-svg&quot;&gt;
+    &lt;img class=&quot;rocket-svg&quot; src=&quot;images/rocketanimation.svg&quot;&gt;
+&lt;/div&gt;</pre>
+            
+            <p>And for the WHMCS version, the code are located in "header.tpl" file as follow:</p>
+            <pre class="prettyprint">
+&lt;div class=&quot;rocket-animation&quot;&gt;
+    &lt;div class=&quot;rocket&quot;&gt;
+        &lt;img src=&quot;{$WEB_ROOT}/templates/{$template}/images/rocket.png&quot; width=&quot;136&quot; height=&quot;190&quot;&gt;
+        &lt;span class=&quot;rocket-line rline1&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;rocket-line rline2&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;rocket-line rline3&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;cloud cloud1&quot;&gt;&lt;img src=&quot;{$WEB_ROOT}/templates/{$template}/images/cloud.png&quot; width=&quot;60&quot; height=&quot;35&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;cloud cloud2&quot;&gt;&lt;img src=&quot;{$WEB_ROOT}/templates/{$template}/images/cloud.png&quot; width=&quot;60&quot; height=&quot;35&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;cloud cloud3&quot;&gt;&lt;img src=&quot;{$WEB_ROOT}/templates/{$template}/images/cloud.png&quot; width=&quot;60&quot; height=&quot;35&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+            <p>Replace it with the following code:</p>
+            <pre class="prettyprint">
+&lt;div class=&quot;rocket-animation-svg&quot;&gt;
+    &lt;img class=&quot;rocket-svg&quot; src=&quot;{$WEB_ROOT}/templates/{$template}/images/rocketanimation.svg&quot;&gt;
+&lt;/div&gt;</pre>
+            <h3 id="info">Info icons & text</h3>
+            <p>In info section you can change the icon and title by editing this code for each one.</p>
+            <p>You can use FontAwesome icons instead of the existed icons. Assume you needed twitter icon. To do that, replace this "hroc hroc-business" with this "fa fa-twitter" </p>
+            <p>If you want to relplace the icon with image, simply replace this code &lt;i class="hroc hroc-business"&gt; with this &lt;img src="image/image.png" /&gt; and modify the src="" with your image url.</p>
+            <pre class="prettyprint">
+&lt;div id="info-box1" class="info-box opened-info"&gt;
+    &lt;div class="info-icon"&gt;&lt;i class="hroc hroc-business"&gt;&lt;/i&gt;&lt;/div&gt;
+    &lt;div class="info-title"&gt;Tangible improvments&lt;/div&gt;
+    &lt;div class="info-circle"&gt;&lt;div class="circle-icon"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+            <p>Make sure to repeat the same modifications in this code as well.</p>
+            <p>You can change the brief text under "info-text" div tag as showing.</p>
+            <pre class="prettyprint">
+&lt;div class="info-title-icon"&gt;
+    &lt;i class="hroc hroc-business"&gt;&lt;/i&gt;
+    &lt;div&gt;Tangible improvments&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="info-text"&gt;
+    At vero eos et accusamus et iusto odio dignissimos ducimus qui
+    blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+    et quas molestias excepturi sint occaecati cupiditate.
+&lt;/div&gt;
+            </pre>
+            <h3 id="features">Features text & images</h3>
+            <p>To change the image in the features section, replace the src="" url of the img tag with you url, or simply replace feature1.png in the images folder.</p>
+            <p>Replace the title, subtitle and the brief easily as showing.</p>
+            <pre class="prettyprint">
+&lt;div class="col-sm-12 col-md-5 text-center"&gt;
+    &lt;img class="feature-image" src="images/feature1.png"&gt;
+&lt;/div&gt;
+&lt;div class="col-sm-12 col-md-7"&gt;
+    &lt;div class="feature-title"&gt;Security Guaranteed.&lt;/div&gt;
+    &lt;div class="feature-subtitle"&gt;Get Started Quickly &amp; Easily&lt;/div&gt;
+    &lt;div class="feature-text"&gt;
+        &lt;p&gt;Hostrocket network covers +250 countries and devices ranging from desktops and laptops to smart phones and tablets.&lt;/p&gt;
+        &lt;p&gt;As an advertiser you'll get instant access to an intuitive and easy-to-use self-serve interface and have +1 billion users a click away. Choose between a variety of advanced targeting options and set up conversion tracking to keep full control of your ROI&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;a class="feature-button" href="#"&gt;Select plan&lt;/a&gt;
+&lt;/div&gt;</pre>
+            <p>And for the "Select plan" button replace the # with your url.</p>
+            <pre class="prettyprint">&lt;a class="feature-button" href="#"&gt;Select plan&lt;/a&gt;</pre>
+            <h3 id="pricing">Pricing tables</h3>
+            <p>Every Pricing table start with this line of code.</p>
+            <pre class="prettyprint">&lt;div class="plan-box"&gt;</pre>
+            <p>You can add "Best Seller" icon at the top of the table by adding "best-seller" class next to "plan-box" as follow.</p>
+            <pre class="prettyprint">&lt;div class="plan-box best-seller"&gt;</pre>
+            <p>This code is the head of the pricing table, you can easily change the title and the price.</p>
+            <pre class="prettyprint">
+&lt;div class="plan-box-header color-bg2"&gt;
+    &lt;div class="plan-title"&gt;Advanced&lt;/div&gt;
+    &lt;div class="price-holder"&gt;
+        &lt;div class="currency"&gt;$&lt;/div&gt;
+        &lt;div class="number"&gt;
+            &lt;div class="num-big"&gt;5&lt;/div&gt;
+            &lt;div class="num-small-holder"&gt;
+                &lt;div class="num-small"&gt;.38&lt;div class="duration"&gt;/mo&lt;/div&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+            <p>In this list you can add or remove the items. Each item has class name "c-item". The items that labeled as not included will have class name "not-inc".</p>
+            <p>In WHMCS template, you will be using this list code when you add the ordering list, to be looks like the Html template exactly.</p>
+            <pre class="prettyprint">
+&lt;ul class="c-list"&gt;    
+    &lt;li class="c-item"&gt;&lt;i class="fa fa-check" aria-hidden="true"&gt;&lt;/i&gt;Unlimited Storage&lt;/li&gt;
+    &lt;li class="c-item"&gt;&lt;i class="fa fa-check" aria-hidden="true"&gt;&lt;/i&gt;500 Protected Files&lt;/li&gt;
+    &lt;li class="c-item"&gt;&lt;i class="fa fa-check" aria-hidden="true"&gt;&lt;/i&gt;All Sharing Features&lt;/li&gt;
+    &lt;li class="c-item"&gt;&lt;i class="fa fa-check" aria-hidden="true"&gt;&lt;/i&gt;Realtime Revoke&lt;/li&gt;
+    &lt;li class="c-item"&gt;&lt;i class="fa fa-check" aria-hidden="true"&gt;&lt;/i&gt;Access to Party Integrations&lt;/li&gt;
+    &lt;li class="c-item"&gt;&lt;i class="fa fa-check" aria-hidden="true"&gt;&lt;/i&gt;Free Native Apps&lt;/li&gt;
+    &lt;li class="c-item not-inc"&gt;&lt;i class="fa fa-check" aria-hidden="true"&gt;&lt;/i&gt;QNote Editor&lt;/li&gt;
+    &lt;li class="c-item not-inc"&gt;&lt;i class="fa fa-check" aria-hidden="true"&gt;&lt;/i&gt;Offline File Access&lt;/li&gt;
+    &lt;li class="c-item not-inc"&gt;&lt;i class="fa fa-check" aria-hidden="true"&gt;&lt;/i&gt;Basic Versioning&lt;/li&gt;
+    &lt;li class="c-item not-inc"&gt;&lt;i class="fa fa-check" aria-hidden="true"&gt;&lt;/i&gt;Single Sign on&lt;/li&gt;
+    &lt;li class="c-item not-inc"&gt;&lt;i class="fa fa-check" aria-hidden="true"&gt;&lt;/i&gt;2-Factor Autentication&lt;/li&gt;
+&lt;/ul&gt;</pre>
+            <p>For the "Select plan" button replace the # with your url.</p>
+            <pre class="prettyprint">&lt;a class="color-bg2" href="#"&gt;Select plan&lt;/a&gt;</pre>
+            <h3 id="reasons">Video section</h3>
+            <p>To replace the video, just replace the iframe code with your code and make sure to set the width="100%" and height="310"</p>
+            <pre class="prettyprint">&lt;iframe class="vimeo" src="https://player.vimeo.com/video/72978544" width="100%" height="310" frameborder="0"&gt;&lt;/iframe&gt;</pre>
+            <h3 id="testimonials">Testimonials</h3>
+            <p>If you want to add a testimonial slide, duplicate this code and modify it with your data.</p>
+            <pre class="prettyprint">
+&lt;div class="testimonial-slide"&gt;
+    &lt;div class="slide-content"&gt;
+        &lt;div class="col-sm-12 col-md-3"&gt;
+            &lt;img src="images/sample.jpg" alt=""&gt;
+        &lt;/div&gt;
+        &lt;div class="col-sm-12 col-md-9"&gt;
+            &lt;p&gt;At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque quos dolores et quas molestias excepturi.&lt;br&gt;
+                praesentium voluptatum deleniti atque corrupti quos et quas molestias excepturi.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+            <h3 id="whmcs">WHMCS Theme Installation</h3>
+            <ul>
+                <li>Copy "hostrocket" folder to WHMCS templates folder.</li>
+                <li>Copy "hostrocket_cart" and "standard_cart" folders to WHMCS templates/orderforms folder.</li>
+                <li>On your WHMCS admin panel go to Setup > General Settings, choose the template "Hostrocket" and save changes.</li>
+                <li>Go to Setup > General Settings then Ordering Tab, choose "Hostrocket Cart" and save changes.</li>
+            </ul>
+            
+
+            <hr>
+            <p>Once again, thank you so much for purchasing this template. We'd be glad to help you if you have any questions relating to this template. No guarantees, but We'll do our best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+        </div>
+    </div>
+</div>
+<div id="footer" class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="brandio-logo-holder">
+                <img src="assets/images/brandio.png" alt="Brandio">
+            </div>
+            <div class="doc-info">
+                <div><b>Created:</b> 10/6/2016</div>
+                <div><b>By:</b> Brandio</div>
+                <div><b>Support:</b> faisal@brandio.io</div>
+            </div>
+        </div>
+    </div>
+</div>
+<a id="back-to-top" href="#header"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+<script src="assets/js/jquery.min.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/prettify.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
